@@ -72,7 +72,7 @@ unarchive:
 build-source:
 	@echo "\n Building $(POD_NAME) \n"
 	@mkdir -p pod-build
-	cd pod-build && ../$(POD_NAME)/configure --prefix=$(BUILD_PREFIX)
+	cd pod-build && ../js-1.8.5/js/src/configure --prefix=$(BUILD_PREFIX)
 	cd pod-build && make
 	@touch built.touch
 
